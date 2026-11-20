@@ -18,6 +18,10 @@ header.top{position:sticky;top:0;z-index:10;background:var(--bg);padding:10px 0 
 h1{font-size:20px;margin:0;color:var(--pri)}
 .days{font-size:15px;color:var(--sub)}
 .days b{color:var(--r);font-size:18px}
+.title-right{display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px}
+.pigai-link{display:inline-flex;align-items:center;justify-content:center;min-height:40px;padding:0 14px;border-radius:10px;background:var(--pri);color:#fff;text-decoration:none;font-weight:600;font-size:15px;white-space:nowrap;flex:none}
+.pigai-link:hover,.pigai-link:focus-visible{filter:brightness(1.08)}
+.pigai-link:active{opacity:.85}
 .tabs{display:flex;gap:8px;margin-top:10px}
 .tab{flex:1;min-height:48px;border:2px solid var(--pri);background:#fff;color:var(--pri);border-radius:12px;font-weight:600;font-size:16px;padding:6px 8px;cursor:pointer}
 .tab small{display:block;font-weight:400;font-size:13px;opacity:.85}
@@ -91,7 +95,7 @@ h1{font-size:20px;margin:0;color:var(--pri)}
 <body>
 <div class="wrap">
 <header class="top">
- <div class="titlebar"><h1>834 光学 · 必做题刷题表</h1><div class="days" id="days"></div></div>
+ <div class="titlebar"><h1>834 光学 · 必做题刷题表</h1><div class="title-right"><a class="pigai-link" href="./pigai/">批改记录</a><div class="days" id="days"></div></div></div>
  <div class="tabs"><button class="tab" data-book="z" id="tab-z">赵凯华《光学》<small id="tc-z"></small></button><button class="tab" data-book="d" id="tab-d">《光学指导》<small id="tc-d"></small></button></div>
  <div class="tools">
   <div class="filters" id="filters">
