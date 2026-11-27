@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#1f3a5f">
+<title>834 光学 · 错题重做复核 · 2026-11-27（Asia/Singapore）</title>
+<style>
+:root{--ink:#1d2433;--sub:#5b6577;--line:#dfe3ea;--bg:#f4f6f9;--card:#fff;--pri:#1f3a5f;
+--g:#2e9d5b;--gbg:#e3f5ea;--a:#d98a00;--abg:#fff3d6;--r:#d64545;--rbg:#fde6e6;--n:#8a93a3;--nbg:#eef0f3}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0;background:var(--bg);color:var(--ink);
+  font-family:-apple-system,"Noto Sans CJK SC","Noto Sans SC","PingFang SC","Microsoft YaHei",sans-serif;
+  font-size:16px;line-height:1.65}
+body{overflow-x:hidden}
+.wrap{max-width:860px;margin:0 auto;padding:0 14px 56px}
+header.top{position:sticky;top:0;z-index:10;background:var(--bg);
+  padding:10px 0 10px;border-bottom:1px solid var(--line)}
+.nav{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.nav a{display:inline-flex;align-items:center;justify-content:center;
+  min-height:40px;padding:0 14px;border-radius:10px;text-decoration:none;
+  font-weight:600;font-size:15px;border:1px solid var(--line);background:#fff;color:var(--pri)}
+.nav a.primary{background:var(--pri);color:#fff;border-color:var(--pri)}
+.nav a:active{opacity:.85}
+h1.page{font-size:22px;margin:16px 0 4px;color:var(--pri);line-height:1.35}
+.meta{color:var(--sub);font-size:14px;margin:0 0 8px}
+article h1{font-size:22px;color:var(--pri);line-height:1.35;margin:18px 0 10px}
+article h2{font-size:19px;color:var(--pri);margin:28px 0 10px;padding-top:8px;border-top:1px solid var(--line)}
+article h2:first-child{border-top:0;padding-top:0}
+article h3{font-size:17px;margin:20px 0 8px;color:var(--ink)}
+article p{margin:0 0 12px}
+article ul,article ol{margin:0 0 14px;padding-left:1.4em}
+article li{margin:0 0 6px}
+article li>ul,article li>ol{margin:8px 0 4px}
+article hr{border:0;border-top:1px solid var(--line);margin:22px 0}
+article strong{font-weight:650}
+article code{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+  font-size:.9em;background:var(--nbg);padding:.1em .35em;border-radius:4px}
+article blockquote{margin:0 0 14px;padding:8px 14px;border-left:3px solid var(--pri);
+  background:#fff;border-radius:0 10px 10px 0;color:var(--sub)}
+.table-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:14px 0;
+  border:1px solid var(--line);border-radius:10px;background:#fff;
+  box-shadow:0 1px 2px rgba(0,0,0,.04)}
+.table-wrap table{border-collapse:collapse;width:100%;min-width:520px;font-size:15px;line-height:1.5}
+.table-wrap th,.table-wrap td{border-bottom:1px solid var(--line);padding:9px 11px;vertical-align:top;text-align:left}
+.table-wrap thead th{background:#e8eef7;color:var(--pri);font-weight:650;white-space:nowrap;border-bottom:1px solid #cfd8e6}
+.table-wrap td:first-child{white-space:nowrap}
+.table-wrap tbody tr:last-child td{border-bottom:0}
+.table-wrap tbody tr:nth-child(even){background:#fafbfd}
+.katex{font-size:1.05em}
+.katex-display{overflow-x:auto;overflow-y:hidden;-webkit-overflow-scrolling:touch;max-width:100%;padding:4px 0}
+.cards{display:flex;flex-direction:column;gap:12px;margin-top:16px}
+a.card{display:block;background:var(--card);border-radius:14px;padding:14px 16px;
+  text-decoration:none;color:inherit;box-shadow:0 1px 2px rgba(0,0,0,.05);
+  border:1px solid transparent}
+a.card:active,a.card:focus-visible{border-color:var(--pri)}
+.card .when{display:flex;flex-wrap:wrap;align-items:baseline;gap:8px 12px;margin-bottom:6px}
+.card .date{font-size:18px;font-weight:700;color:var(--pri)}
+.card .dow{font-size:14px;color:var(--sub)}
+.card .sum{margin:0;font-size:15px;color:var(--ink);line-height:1.6}
+.empty{color:var(--sub);margin-top:24px}
+.foot{font-size:13px;color:var(--sub);text-align:center;margin-top:28px}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js" crossorigin="anonymous"></script>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  function go() {
+    if (typeof renderMathInElement !== "function") { setTimeout(go, 50); return; }
+    renderMathInElement(document.body, {
+      delimiters: [
+        {left: "\\[", right: "\\]", display: true},
+        {left: "\\(", right: "\\)", display: false},
+        {left: "$$", right: "$$", display: true}
+      ],
+      throwOnError: false,
+      ignoredTags: ["script","noscript","style","textarea","pre","code"]
+    });
+  }
+  go();
+});
+</script>
+</head>
+<body>
+<div class="wrap">
+<header class="top">
+  <nav class="nav">
+    <a href="./">← 批改记录</a>
+    <a href="../">刷题表</a>
+  </nav>
+</header>
+<p class="meta">2026年11月27日 星期五</p>
+<article>
+<h1>834 光学 · 错题重做复核 · 2026-11-27（Asia/Singapore）</h1>
+<ul>
+<li>材料：1 份 PDF（10 页），错题本「834 光学 · 错题本（11.20–11.24）」中 <strong>11 月 20 日</strong> 那一部分（共 12 题），没有红笔自批。</li>
+<li>本次只重做了 11-20 的题；11-21、11-22、11-24 的错题还没重做（见第四节）。</li>
+<li>对照的原分析：<code>/workspace/834/pigai/2026-11-20.md</code>（必要时也看 11-21/22/24）。</li>
+<li>结论分三档：<strong>已掌握</strong> / <strong>基本掌握，仍有小问题</strong> / <strong>仍未掌握</strong>。</li>
+</ul>
+<hr>
+<h2>一、重做题目清单</h2>
+<div class="table-wrap"><table><thead><tr><th>#</th><th>原日期</th><th>题号（《光学指导》）</th><th>原问题（11-20）</th><th>这次情况</th><th>结论</th></tr></thead><tbody><tr><td>1</td><td>11-20</td><td>第1章 自测 选1</td><td>答案蒙对，但讲不出「正常色散 → 蓝光 \(n\) 大 → 偏向最大」</td><td>推出了 \(n_\text{红}&lt;\dots&lt;n_\text{蓝}\)，<strong>却选了 D（各色偏离一致）</strong>；还把公式写成 \(n=c/\lambda\)</td><td><strong>仍未掌握</strong>（新错）</td></tr><tr><td>2</td><td>11-20</td><td>第1章 自测 选3</td><td>算出 \(s'&lt;0\) 却选「会聚」</td><td>\(s'=\frac{n'r}{n'-n}&lt;0\) → 发散，选 A</td><td><strong>已掌握</strong></td></tr><tr><td>3</td><td>11-20</td><td>第1章 自测 填1</td><td>一刷把波长也写成「不变」</td><td>否/是/否，并写了「频率不变，\(\lambda_n=\lambda_0/n\)」</td><td><strong>已掌握</strong></td></tr><tr><td>4</td><td>11-20</td><td>第1章 自测 填2</td><td>正入射就以为物像重合，答 5 cm</td><td>\(h'=h/n=3.75\,\mathrm{cm}\)</td><td><strong>基本掌握</strong>（只背了公式，没写为什么正入射也会变浅）</td></tr><tr><td>5</td><td>11-20</td><td>第1章 自测 填3</td><td>漏掉「入射方向」</td><td>写「第一层和最后一层介质的折射率；中间各层」，<strong>仍漏「入射方向」</strong></td><td><strong>基本掌握，仍有小问题</strong></td></tr><tr><td>6</td><td>11-20</td><td>第1章 自测 填7</td><td>\(1/s'\) 当成 \(s'\)，放大率 0.053 → 答「小」；订正没重算</td><td>答案「大」对，但 \(\frac{1-4/3}{-R}\) 算成 \(\frac1R\)（应为 \(\frac1{3R}\)），得 \(s'=-3R\)、\(V=4\)（应为 \(s'=-R\)、\(V=4/3\)）</td><td><strong>仍未掌握</strong>（同类代数错误再犯）</td></tr><tr><td>7</td><td>11-20</td><td>第1章 自测 计2</td><td>一刷无从下手，订正只抄了「9 次」</td><td>求出 \(i_c\approx42^\circ\)，画了光路，写出「每反射一次入射角减 5°」，\(85^\circ-5n&lt;42^\circ\Rightarrow n=9\)</td><td><strong>基本掌握，仍有小问题</strong>（开头有两行乱用公式；蓝笔部分可能是对照答案后补的）</td></tr><tr><td>8</td><td>11-20</td><td>第1章 自测 计4</td><td>一刷不会</td><td>逐次成像（虚物 \(s_1=-(15+t)\)，符号全对）和公式 \(\Delta s=t(1-1/n)\) 两种方法都得 \(t=9\,\mathrm{mm}\)</td><td><strong>已掌握</strong>（顺带证明符号法则也通了）</td></tr><tr><td>9</td><td>11-20</td><td>第2章 例2.1(5)</td><td>只写杨氏双缝、薄膜等倾，装置不精确</td><td>方法1 平行光正入射菲涅耳双棱镜；方法2 双孔放在透镜物方焦面；(1)–(4) 也重做全对</td><td><strong>已掌握</strong></td></tr><tr><td>10</td><td>11-20</td><td>第2章 例2.5</td><td>把 0.02° 写成 \(10^{-2}\pi\) rad</td><td>明确写 \(0.02\times\pi/180=3.49\times10^{-4}\) rad；\(d=0.84\,\mathrm{mm}\)，\(\theta'=0.015^\circ\)</td><td><strong>已掌握</strong></td></tr><tr><td>11</td><td>11-20</td><td>第4章 例4.1</td><td>两问都判成右旋</td><td>(1) \(\Delta\varphi=-\pi/2\)，左旋 ✓；<strong>(2) 仍判成右旋</strong> ✗</td><td><strong>仍未掌握</strong>（第(2)问同一处又错）</td></tr><tr><td>12</td><td>11-20</td><td>第4章 例4.2</td><td>答案对，化简时把 \(\sin^22\theta\) 写成 \(\sin2\theta\)</td><td>\(I_3=\frac18I_0\sin^22\theta\) 写对，三问全对</td><td><strong>已掌握</strong></td></tr></tbody></table></div>
+<p><strong>统计：12 题中 已掌握 6（选3、填1、计4、例2.1、例2.5、例4.2）；基本掌握 3（填2、填3、计2）；仍未掌握 3（选1、填7、例4.1(2)）。</strong></p>
+<hr>
+<h2>二、逐题对比（简）</h2>
+<ol>
+<li><strong>选1（新错）</strong>：上次答案对、理由不全；这次理由对了一半，答案反而错。他推出了 \(n_\text{蓝}\) 最大，但没再走一步「\(n\) 越大，棱镜偏向角越大」，就选了 D。另外 \(n=c/\lambda\) 是错的，应该是 \(n=c/v\)；「波长越短 \(n\) 越大」是正常色散的实验规律，不是从这个公式推出来的。</li>
+<li><strong>选3</strong>：直接写出 \(s'=\frac{n'r}{n'-n}&lt;0\) → 发散，「算出虚像却选会聚」的问题已经没有了。小瑕疵：写成「透镜起发散作用」，应为「球面」。</li>
+<li><strong>填1</strong>：三个空都对，理由也对。</li>
+<li><strong>填2</strong>：答案对。只写了「固定公式 \(h'=h/n\)」，没有写「近轴下 \(\tan\theta\approx\sin\theta\)，所以 \(h'=h/n\)」，所以上次「正入射就当成物像重合」的误解有没有真正消除，这次看不出来。</li>
+<li><strong>填3</strong>：第二空对。第一空还是只写了「第一层和最后一层的折射率」，书上答案是「<strong>入射方向</strong>及两边介质的折射率」，同一处第二次漏掉。</li>
+<li><strong>填7（重点）</strong>：符号设定（\(s=R\)、\(r=-R\)、\(n=4/3\)、\(n'=1\)）全对，错在算术：\(\frac{1-4/3}{-R}=\frac{-1/3}{-R}=\frac1{3R}\)，他写成 \(\frac1R\)。正确结果是 \(\frac1{s'}=\frac1{3R}-\frac4{3R}=-\frac1R\Rightarrow s'=-R\)，像仍在球心；\(V=-\frac{s'n}{sn'}=\frac43\)。结论「大」是对的，但像的位置（他写「左侧 3R」）和放大率（4）都错。这一题两次都是代数错，而且鱼在球心、像也在球心这个物理结论他一次都没用来检查。</li>
+<li><strong>计2</strong>：比上次进步很大，自己能画光路、写出递推。开头两行有问题：第一行用 \(1.5\sin85^\circ=\sin\theta_2\) 求出 \(\theta_2=127.5^\circ\)。正弦值大于 1 本身就说明发生全反射，不该算出一个角度。第二行的「全反射公式」写错后划掉了。这两行说明他做题时还是先套公式、后想物理。</li>
+<li><strong>计4</strong>：这次逐次成像把会聚光束当<strong>虚物</strong>，\(s_1=-(15+t)\)、\(s_2=-[1.5(15+t)-t]\)，符号完全自洽，最后得 \(\Delta s=t/3=0.3\,\mathrm{cm}\)。这正是 11-21 例 1.3 没打通的地方，现在通了。</li>
+<li><strong>例2.1</strong>：(5) 两种方法都和书上一致。(1)–(4) 用 \(\cos(\frac\pi2-\theta)\) 写波矢分量，也对。</li>
+<li><strong>例2.5</strong>：先单独写出度→弧度换算再代数，上次的错误没有再犯。</li>
+<li><strong>例4.1(2)（重点）</strong>：他把 \(\sin X\) 改写成 \(\cos(\frac\pi2-X)\)，于是相位变成 \(\frac\pi2-\omega t+kz\)，<strong>\(\omega t\) 前面变成负号</strong>，再用「\(\Delta\varphi=\varphi_y-\varphi_x\)，负为左旋」去判断，正负就反了。正确写法：要统一成 \(\cos(\omega t-kz+\varphi)\) 的形式，即 \(\sin X=\cos(X-\frac\pi2)\)：\(E_x=A\cos(\omega t-kz-\frac\pi2)\)，\(E_y=A\cos(\omega t-kz-\pi)\)，\(\Delta\varphi=\varphi_y-\varphi_x=-\frac\pi2\)，左旋。第(1)问他用的就是这种形式，所以做对了。这说明判别规则他已经会用，但还不知道这条规则只在 \(+\omega t\) 的写法下成立。</li>
+<li><strong>例4.2</strong>：全对，平方也写对了。</li>
+</ol>
+<hr>
+<h2>三、薄弱点状态总表（11-20 ～ 11-27 累计）</h2>
+<div class="table-wrap"><table><thead><tr><th>薄弱/模糊点</th><th>首次暴露</th><th>后续表现</th><th><strong>当前状态</strong></th></tr></thead><tbody><tr><td>色散：\(n\) 与波长、偏向角的关系</td><td>11-20 选1</td><td>11-21 例2.7(3)；11-27 选1 理由对但选错</td><td><strong>仍未掌握</strong></td></tr><tr><td>圆偏振左/右旋判断</td><td>11-20 例4.1</td><td>11-27：标准形式会判，sin 改写成 cos 后判反</td><td><strong>仍未掌握</strong>（只差 \(+\omega t\) 统一这一步）</td></tr><tr><td>球面折射放大率 / 球心成像（含代数）</td><td>11-20 填7</td><td>11-21 例1.6 订正好；11-27 填7 代数又错</td><td><strong>仍未掌握</strong>（在 1/s 的代数上）</td></tr><tr><td>多层介质出射方向</td><td>11-20 填3</td><td>11-27 仍漏「入射方向」</td><td>基本掌握，仍有小问题</td></tr><tr><td>视深</td><td>11-20 填2</td><td>11-22 例1.12 全对；11-27 填2 对</td><td>基本掌握 → 接近已掌握</td></tr><tr><td>棱镜多次全反射</td><td>11-20 计2</td><td>11-27 能画光路、写递推</td><td>基本掌握，仍有小问题</td></tr><tr><td>全反射判定（先算 \(i_c\)）</td><td>11-20 选2/计2</td><td>11-22 例1.14 漏判；11-27 计2 求出 \(i_c\)</td><td>基本掌握（复合题里还没验证）</td></tr><tr><td>平行板像移（公式 + 逐次成像）</td><td>11-20 计4/计12</td><td>11-21 例1.3 卡符号；11-27 计4 两法全对</td><td><strong>已掌握</strong></td></tr><tr><td>符号法则（实物/虚物）</td><td>11-21 例1.3</td><td>11-22 例1.12/1.13 对；11-27 计4 虚物也对</td><td><strong>已掌握</strong>（平面情形）；复合元件（例1.14）未复测</td></tr><tr><td>虚像 ↔ 发散</td><td>11-20 选3</td><td>11-27 选3 对</td><td><strong>已掌握</strong></td></tr><tr><td>介质中频率/波长/颜色</td><td>11-20 填1</td><td>11-27 填1 对</td><td><strong>已掌握</strong></td></tr><tr><td>度 ↔ 弧度</td><td>11-20 例2.5</td><td>11-24 例2.10 对；11-27 例2.5 对</td><td><strong>已掌握</strong></td></tr><tr><td>获得两束相干平行光的装置</td><td>11-20 例2.1(5)</td><td>11-27 对</td><td><strong>已掌握</strong></td></tr><tr><td>马吕斯定律化简</td><td>11-20 例4.2</td><td>11-27 对</td><td><strong>已掌握</strong></td></tr><tr><td>局部插片 vs 全浸没；含色散白光零级</td><td>11-21 例2.7(3)</td><td>11-24 例2.8 插片对；色散部分未重做</td><td>插片：基本掌握；色散零级：<strong>未重做</strong></td></tr><tr><td>复合元件漏界面 / 虚物进下一级</td><td>11-22 例1.14</td><td>未重做</td><td><strong>未重做（仍薄弱）</strong></td></tr><tr><td>解方程反号、单位收尾</td><td>11-22 例1.10/1.11</td><td>11-27 填7 代数又错</td><td><strong>仍需关注</strong>（贯穿多天的习惯问题）</td></tr><tr><td>半波损失项（定性题容易漏）</td><td>11-24 例2.14</td><td>未重做</td><td><strong>未重做</strong></td></tr><tr><td>相干条件的精确表述（有平行分量即可）</td><td>11-24 选5</td><td>未重做</td><td><strong>未重做</strong></td></tr><tr><td>等价式识别；\(d&gt;0\) 不带 ±</td><td>11-24 例2.8</td><td>未重做</td><td><strong>未重做</strong></td></tr></tbody></table></div>
+<hr>
+<h2>四、还没重做 / 仍需关注</h2>
+<p><strong>这次重做里仍未掌握的（优先）：</strong></p>
+<ul>
+<li>11-20 选1（色散 → 偏向角）</li>
+<li>11-20 填7（球心鱼的像：\(s'=-R\)，\(V=n/n'=4/3\)）</li>
+<li>11-20 例4.1(2)（sin 改 cos 后相位要统一成 \(+\omega t\)）</li>
+</ul>
+<p><strong>11-20 中错题本没有收、也还没重做的：</strong></p>
+<ul>
+<li>选2（\(v_1/v_2\) 下标推反；笔记选项和书不一致）</li>
+<li>计12（书答案方向错，他自己算对了，可以不重做）</li>
+</ul>
+<p><strong>11-21 ～ 11-24 的错题（错题本后面应该还有，这次 PDF 里没有）：</strong></p>
+<ul>
+<li>11-21 例1.3 方法1（逐次成像符号）——计4 已经证明会了，可以快速过</li>
+<li>11-21 例2.7(3)（加色散玻璃片后白光零级错开）</li>
+<li>11-22 例1.14（棱镜：全反射判定 + 第一平面折射 + 虚物 \(s_3=-120\,\mathrm{cm}\)）<strong>← 最该重做</strong></li>
+<li>11-22 例1.10（消元反号）、例1.11（单位）——小问题</li>
+<li>11-24 选5（相干条件 ADE）</li>
+<li>11-24 例2.14（\(h\ll\lambda\) 加半波损失 → 均匀暗场）</li>
+<li>11-24 例2.8（第(1)问其实对；第(2)问 \(d&gt;0\) 去掉 ±）</li>
+</ul>
+<hr>
+<h2>五、建议（距 12-20 考试还有 23 天）</h2>
+<ol>
+<li><p><strong>今天就把三道「仍未掌握」重做一遍，每道 5 分钟：</strong></p>
+<ul>
+<li>例4.1(2)：先统一成 \(\cos(\omega t-kz+\varphi)\) 的形式，再算 \(\Delta\varphi=\varphi_y-\varphi_x\)。在笔记里把这句话写成判左/右旋的<strong>第 0 步</strong>。这个知识点考过（2022 选6），选择题 5 分。</li>
+<li>填7：重算一遍，得到 \(s'=-R\)。再记住一个检查方法：<strong>物在球心时，所有光线都沿半径方向射出、不偏折，所以像一定在球心，放大率 \(=n/n'\)</strong>。以后算出别的位置，就要回头查代数。和 2026 大6s 是同一情景。</li>
+<li>选1：补上「\(n\) 大 → 折射偏折大 → 蓝光偏离最大，选 C」，并把 \(n=c/\lambda\) 改成 \(n=c/v\)。</li>
+</ul>
+</li>
+<li><strong>接着重做错题本 11-21 ～ 11-24 的部分</strong>，优先 <strong>例1.14</strong>（复合元件逐次成像，直接对应 2026 大6s/选9）和 <strong>11-24 选5、例2.14</strong>（干涉选择题常考）。11-21 例1.3 可以略过，计4 已经证明会了。</li>
+<li><strong>代数要验算，一句话：</strong> 算完 \(1/s'\) 后，用一个物理结论检查结果。例如物在球心时像也在球心，平行光入射时像在焦点，实像对应的焦距应为正。填7 两次都错在这里，例 1.10 也是。</li>
+<li>已掌握的点（平行板像移、度弧度、视深、马吕斯、相干平行光装置）不用再刷，考前看一遍公式就行。剩下的时间用来做第 2 章后半部分（等倾、牛顿环、迈克尔逊、F-P）的新题，这些每年必考。</li>
+</ol>
+
+</article>
+<p class="foot">进度仍保存在刷题表所在浏览器里；这份分析只是记录。</p>
+
+</div>
+</body>
+</html>
