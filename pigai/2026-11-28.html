@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#1f3a5f">
+<title>834 光学 · 错题重做复核（第二批）· 2026-11-28（Asia/Singapore）</title>
+<style>
+:root{--ink:#1d2433;--sub:#5b6577;--line:#dfe3ea;--bg:#f4f6f9;--card:#fff;--pri:#1f3a5f;
+--g:#2e9d5b;--gbg:#e3f5ea;--a:#d98a00;--abg:#fff3d6;--r:#d64545;--rbg:#fde6e6;--n:#8a93a3;--nbg:#eef0f3}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0;background:var(--bg);color:var(--ink);
+  font-family:-apple-system,"Noto Sans CJK SC","Noto Sans SC","PingFang SC","Microsoft YaHei",sans-serif;
+  font-size:16px;line-height:1.65}
+body{overflow-x:hidden}
+.wrap{max-width:860px;margin:0 auto;padding:0 14px 56px}
+header.top{position:sticky;top:0;z-index:10;background:var(--bg);
+  padding:10px 0 10px;border-bottom:1px solid var(--line)}
+.nav{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.nav a{display:inline-flex;align-items:center;justify-content:center;
+  min-height:40px;padding:0 14px;border-radius:10px;text-decoration:none;
+  font-weight:600;font-size:15px;border:1px solid var(--line);background:#fff;color:var(--pri)}
+.nav a.primary{background:var(--pri);color:#fff;border-color:var(--pri)}
+.nav a:active{opacity:.85}
+h1.page{font-size:22px;margin:16px 0 4px;color:var(--pri);line-height:1.35}
+.meta{color:var(--sub);font-size:14px;margin:0 0 8px}
+article h1{font-size:22px;color:var(--pri);line-height:1.35;margin:18px 0 10px}
+article h2{font-size:19px;color:var(--pri);margin:28px 0 10px;padding-top:8px;border-top:1px solid var(--line)}
+article h2:first-child{border-top:0;padding-top:0}
+article h3{font-size:17px;margin:20px 0 8px;color:var(--ink)}
+article p{margin:0 0 12px}
+article ul,article ol{margin:0 0 14px;padding-left:1.4em}
+article li{margin:0 0 6px}
+article li>ul,article li>ol{margin:8px 0 4px}
+article hr{border:0;border-top:1px solid var(--line);margin:22px 0}
+article strong{font-weight:650}
+article code{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+  font-size:.9em;background:var(--nbg);padding:.1em .35em;border-radius:4px}
+article blockquote{margin:0 0 14px;padding:8px 14px;border-left:3px solid var(--pri);
+  background:#fff;border-radius:0 10px 10px 0;color:var(--sub)}
+.table-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:14px 0;
+  border:1px solid var(--line);border-radius:10px;background:#fff;
+  box-shadow:0 1px 2px rgba(0,0,0,.04)}
+.table-wrap table{border-collapse:collapse;width:100%;min-width:520px;font-size:15px;line-height:1.5}
+.table-wrap th,.table-wrap td{border-bottom:1px solid var(--line);padding:9px 11px;vertical-align:top;text-align:left}
+.table-wrap thead th{background:#e8eef7;color:var(--pri);font-weight:650;white-space:nowrap;border-bottom:1px solid #cfd8e6}
+.table-wrap td:first-child{white-space:nowrap}
+.table-wrap tbody tr:last-child td{border-bottom:0}
+.table-wrap tbody tr:nth-child(even){background:#fafbfd}
+.katex{font-size:1.05em}
+.katex-display{overflow-x:auto;overflow-y:hidden;-webkit-overflow-scrolling:touch;max-width:100%;padding:4px 0}
+.cards{display:flex;flex-direction:column;gap:12px;margin-top:16px}
+a.card{display:block;background:var(--card);border-radius:14px;padding:14px 16px;
+  text-decoration:none;color:inherit;box-shadow:0 1px 2px rgba(0,0,0,.05);
+  border:1px solid transparent}
+a.card:active,a.card:focus-visible{border-color:var(--pri)}
+.card .when{display:flex;flex-wrap:wrap;align-items:baseline;gap:8px 12px;margin-bottom:6px}
+.card .date{font-size:18px;font-weight:700;color:var(--pri)}
+.card .dow{font-size:14px;color:var(--sub)}
+.card .sum{margin:0;font-size:15px;color:var(--ink);line-height:1.6}
+.empty{color:var(--sub);margin-top:24px}
+.foot{font-size:13px;color:var(--sub);text-align:center;margin-top:28px}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js" crossorigin="anonymous"></script>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  function go() {
+    if (typeof renderMathInElement !== "function") { setTimeout(go, 50); return; }
+    renderMathInElement(document.body, {
+      delimiters: [
+        {left: "\\[", right: "\\]", display: true},
+        {left: "\\(", right: "\\)", display: false},
+        {left: "$$", right: "$$", display: true}
+      ],
+      throwOnError: false,
+      ignoredTags: ["script","noscript","style","textarea","pre","code"]
+    });
+  }
+  go();
+});
+</script>
+</head>
+<body>
+<div class="wrap">
+<header class="top">
+  <nav class="nav">
+    <a href="./">← 批改记录</a>
+    <a href="../">刷题表</a>
+  </nav>
+</header>
+<p class="meta">2026年11月28日 星期六</p>
+<article>
+<h1>834 光学 · 错题重做复核（第二批）· 2026-11-28（Asia/Singapore）</h1>
+<ul>
+<li>材料：1 份 PDF（6 页），错题本「834 光学 · 错题本（11.20–11.24）」的续页，<strong>没有红笔自批</strong>，是重做，不是新题。</li>
+<li><p>内容识别：</p>
+<ul>
+<li>第 1 页 = 错题本第 12 题（例4.2），和 11-27 那份 PDF 的最后一页<strong>完全相同（重复页）</strong>，已在 11-27 复核过，这里不再重复评分。</li>
+<li>第 2–4 页 = <strong>11-21 的 3 题</strong>：例1.3、例1.6、例2.7(3)。</li>
+<li>第 5–6 页 = <strong>11-22 的 2 题</strong>：例1.10、例1.11。页眉写「11月22日 需重做 3 题」，但第 3 题（编号 18，应是例1.14）<strong>不在这份 PDF 里</strong>，可能漏拍/漏导出。</li>
+</ul>
+</li>
+<li>对照原分析：<code>2026-11-21.md</code>、<code>2026-11-22.md</code>、<code>2026-11-27.md</code>。</li>
+</ul>
+<hr>
+<h2>一、重做题目清单</h2>
+<div class="table-wrap"><table><thead><tr><th>#</th><th>原日期</th><th>题号（《光学指导》）</th><th>原问题</th><th>这次情况</th><th>结论</th></tr></thead><tbody><tr><td>13</td><td>11-21</td><td>第1章 例1.3</td><td>逐次成像时混用两套符号（\(s_1\) 写成负），消不掉眼距 \(x\)；公式法对了却被自己判错</td><td>两种方法都做，都得 \(\tfrac16\,\mathrm{cm}=\tfrac53\,\mathrm{mm}\)，向玻璃板靠近；符号全部自洽</td><td><strong>已掌握</strong></td></tr><tr><td>14</td><td>11-21</td><td>第1章 例1.6</td><td>把厚透镜上表面外的介质也当成水（审题漏看「放在水面上」）</td><td>\(n_2'=1\)，\(s_1'=-5.4,\ V_1=1.2\)；\(s_2'=-27.75\,\mathrm{cm},\ V_2=5.625,\ V=6.75,\ y'=13.5\,\mathrm{mm}\)，放大正立虚像，全对</td><td><strong>已掌握</strong></td></tr><tr><td>15</td><td>11-21</td><td>第2章 例2.7(3)</td><td>用了全浸没公式 \(x=k\lambda D/(nd)\)；背「零级白色」，不会由光程差分析色散零级</td><td>(1)(2) 对（0.5 mm；\(n=1.5203\)）。(3) 改用 \((n-1)t\)，\(x=\tfrac Dd[k\lambda+(n_0+\tfrac A{\lambda^2}-1)t]\)，并得出「零级内红外蓝」。<strong>但 \(\Delta x\) 的方向符号错了</strong>（应为 \(-\)，向装玻璃片的缝一侧移）</td><td><strong>基本掌握，仍有小问题</strong></td></tr><tr><td>16</td><td>11-22</td><td>第1章 例1.10</td><td>消元时符号反了：\(f_1=-9,\ f_2=-36,\ s=-4.74\,\mathrm{cm}\)，没发现与「实像」矛盾</td><td>\(f_1=9,\ f_2=36,\ s=90\,\mathrm{cm}\)，全对。把题干「实像」划了波浪线。<strong>但消元过程没写出来</strong></td><td><strong>基本掌握</strong>（结果对，原来出错的那一步这次看不到）</td></tr><tr><td>17</td><td>11-22</td><td>第1章 例1.11</td><td>最后一步单位写成 cm（\(90\,\mathrm{cm}\)）</td><td>\(n=1.5,\ f=22.5\,\mathrm{mm},\ s'=90\,\mathrm{mm}\)，单位统一为 mm</td><td><strong>已掌握</strong></td></tr><tr><td>12</td><td>11-20</td><td>第4章 例4.2</td><td>（11-27 已复核，重复页）</td><td>与 11-27 同一页</td><td>已掌握（沿用）</td></tr></tbody></table></div>
+<p><strong>统计：5 题（13–17）里 已掌握 3（例1.3、例1.6、例1.11）；基本掌握 2（例2.7(3)、例1.10）；仍未掌握 0；没有新的概念性错误。</strong></p>
+<hr>
+<h2>二、逐题对比（简）</h2>
+<p><strong>13 例1.3（11-21 最核心的符号问题 → 已解决）</strong></p>
+<ul>
+<li>上次：实物写成 \(s_1=-(25-x)\)，后面厚度加减全乱。</li>
+<li>这次：设物距 \(a\)，\(s_1=a\to s_1'=-1.5a\to s_2=1.5a+0.5\to s_2'=-(a+\tfrac13)\)，最后 \(|s_2'|-(|s_1|+\tfrac12)=-\tfrac16\,\mathrm{cm}\)。「\(s_2=-s_1'+d\)」这一步正是上次卡住的地方，现在是对的；\(a\) 也自动消掉了。</li>
+<li>同时给了公式法 \(t(1-\tfrac1n)=\tfrac53\,\mathrm{mm}\) 作验证。结合 11-27 计4 的虚物逐次成像，符号法则可以认为<strong>已经过关</strong>。</li>
+</ul>
+<p><strong>14 例1.6（审题漏界面 → 已解决）</strong></p>
+<ul>
+<li>一次成像 \(s_1=4,\ n_1=\tfrac43,\ n_1'=1.5,\ r=3\) → \(-5.4\,\mathrm{cm}\)；二次成像 \(s_2=\tfrac{27}5+2=7.4\)，<strong>\(n_2'=1\)（空气）</strong>，\(r_2=-3\) → \(-27.75\,\mathrm{cm}\)。</li>
+<li>和书上答案、我自己的核算一致（\(V=6.75,\ y'=13.5\,\mathrm{mm}\)）。上次的错因（把上表面外也当水）没有再出现。</li>
+</ul>
+<p><strong>15 例2.7(3)（色散+光程差 → 方向仍错）</strong></p>
+<ul>
+<li>好的地方：不再套「全浸没」公式；写出 \(\delta'=(n-1)t\) 的附加光程；把 \(n=n_0+A/\lambda^2\) 代入；<strong>\(\lambda\) 越长 \(n\) 越小，零级偏移越小 → 红光在内、蓝/紫在外</strong>，结论正确，说明「正常色散 + 光程差」这两块已经连起来了。</li>
+<li>问题：他写 \(x=x_0+\Delta x\)，\(\Delta x=+\tfrac{D(n-1)t}{d}\)。实际上玻璃片挡在下缝 \(S_2\) 前，\(S_2\) 路径变长，要使光程差为零，必须往 \(S_2\) 一侧（下方）找，所以应是 \(x=\tfrac Dd[k\lambda-(n-1)t]\)，零级在 \(O\) 点<strong>下方</strong>：
+  \(x_0(\lambda)=-\tfrac Dd\,(n_0+\tfrac A{\lambda^2}-1)\,t\)。</li>
+<li>数值检查：\(\lambda=0.55\,\mu\mathrm{m}\) 时 \(|x_0|\approx4.73\,\mathrm{mm}\)，正好等于 (2) 里测得的条纹移动量，可以拿它当自检；\(\lambda=0.7\,\mu\mathrm{m}\) 约 4.66 mm，\(\lambda=0.4\,\mu\mathrm{m}\) 约 4.89 mm，<strong>不同颜色的零级只错开约 0.2 mm</strong>，所以零级是一小段红内紫外的彩色带，不在 \(O\) 点，也不是白色中心。</li>
+<li>原因：他把「(2) 里推出的条纹移动量 \(\Delta x\)」当成了「条纹往 \(+x\) 方向移」。(2) 只需要大小，(3) 需要方向。</li>
+</ul>
+<p><strong>16 例1.10（消元反号 → 结果对，过程看不见）</strong></p>
+<ul>
+<li>联立 \(f_2=4f_1\) 这一步对（\(f_1:f_2=\frac{n_L/n_2-1}{n_L/n_1-1}\) 的倒数）。直接给出 \(f_1=9,\ f_2=36,\ s=90\,\mathrm{cm}\)，与书一致。</li>
+<li>出错的那一步（两式相减）这次没写，所以<strong>不能确认已经改掉</strong>。好迹象：他在题干把「实像」划了线，并且 \(s\) 两边都按正数代入。建议在笔记里补写 \(\tfrac1{10}-\tfrac1{60}=\tfrac1{12}=\tfrac{3}{4f_1}\)。</li>
+</ul>
+<p><strong>17 例1.11（单位 → 已解决）</strong></p>
+<ul>
+<li>全程用 mm，最后写「透镜后 90 mm 处」。其余步骤（\(n=1.5\)；\(1/f=1/20-1/180\)）和上次一样都对。</li>
+</ul>
+<hr>
+<h2>三、知识点掌握度（更新后）</h2>
+<div class="table-wrap"><table><thead><tr><th>等级</th><th>知识点</th><th>证据</th></tr></thead><tbody><tr><td><strong>掌握好</strong></td><td>单球面逐次成像：符号衔接、\(s_2=-s_1'+d\)、\(V=V_1V_2\)</td><td>例1.3、例1.6 的重做全部正确；11-27 计4 虚物也对</td></tr><tr><td><strong>掌握好</strong></td><td>厚度/介质层数多时的「界面清单」（水—透镜—空气）</td><td>例1.6 的 \(n_2'=1\) 这次没再漏；但复合棱镜（例1.14）还没复测</td></tr><tr><td><strong>掌握好</strong></td><td>平行板像移（公式 + 逐次成像相互验证）</td><td>例1.3 两种方法吻合</td></tr><tr><td><strong>掌握好</strong></td><td>密接透镜、磨镜者公式、单位统一</td><td>例1.11 全对</td></tr><tr><td><strong>一般般</strong></td><td>联立消元与符号自检（用「实像」检验焦距/物距应为正）</td><td>例1.10 结果对，过程缺失；11-27 填7 在同类代数上又错，所以还没有稳定</td></tr><tr><td><strong>一般般</strong></td><td>白光 + 色散片的杨氏零级条纹</td><td>例2.7(3)：大小、颜色次序对，方向符号错</td></tr><tr><td><strong>模糊</strong></td><td>「条纹移动量」和「条纹移动方向」的区别（插片后条纹向放片那一侧移动）</td><td>例2.7(3) 的 \(\Delta x\) 符号；这是 2022 大1 直接要求写出玻璃片移动方向的点</td></tr><tr><td><strong>不熟悉</strong></td><td>复合元件（棱镜 + 球面 + 透镜）的第一平面折射、全反射判定、虚物</td><td>例1.14 没出现在这份 PDF，未复测</td></tr><tr><td><strong>薄弱</strong>（沿用 11-27）</td><td>例4.1(2) sin→cos 后相位统一；填7 的 \(1/s'\) 代数；选1 色散 → 偏向角</td><td>本次没有重做，状态不变</td></tr></tbody></table></div>
+<hr>
+<h2>四、更新后的薄弱点清单（11-20 ～ 11-28）</h2>
+<div class="table-wrap"><table><thead><tr><th>点</th><th>当前状态</th></tr></thead><tbody><tr><td>符号法则（实物/虚物、平面折射）</td><td><strong>已掌握</strong>（例1.3、例1.6、计4 三次验证）</td></tr><tr><td>审题漏界面（例1.6）</td><td><strong>已掌握</strong></td></tr><tr><td>单位收尾（例1.11）</td><td><strong>已掌握</strong>（例2.5 的度↔弧度 11-27 也已过关）</td></tr><tr><td>局部插片 vs 全浸没（例2.7）</td><td><strong>已掌握</strong>（不再混用）</td></tr><tr><td>含色散白光零级条纹（例2.7(3)）</td><td><strong>基本掌握</strong>，剩<strong>移动方向符号</strong></td></tr><tr><td>联立消元反号（例1.10）</td><td><strong>基本掌握</strong>，需要看到过程才能确认</td></tr><tr><td>例4.1(2) 左/右旋（sin→cos 后 \(\omega t\) 变号）</td><td><strong>仍未掌握</strong>（11-27 结论，未重做）</td></tr><tr><td>填7 球心放大率 \(s'=-R,\ V=4/3\)</td><td><strong>仍未掌握</strong>（11-27 结论，未重做）</td></tr><tr><td>选1 色散与偏向角</td><td><strong>仍未掌握</strong>（11-27 结论，未重做）</td></tr><tr><td>复合元件漏界面/虚物（例1.14）</td><td><strong>未复测</strong>（仍薄弱）</td></tr><tr><td>半波损失项（例2.14）、相干条件 ADE（选5）、例2.8(2) \(d&gt;0\)</td><td><strong>未复测</strong></td></tr><tr><td>选2（\(v_1/v_2\) 下标）</td><td><strong>未复测</strong></td></tr><tr><td>填3 漏「入射方向」、填2 只背公式、计2 起手乱用公式</td><td>基本掌握，小问题（11-27 结论）</td></tr></tbody></table></div>
+<hr>
+<h2>五、教材缺答案 / 有误</h2>
+<ul>
+<li><strong>例2.7(3)</strong>：书上的答案把 \(0.0605/\lambda^2\) 印成了 \(0.00605/\lambda^2\)（11-21 已指出）。正确式：
+  \(x=-0.91\,(5-k\lambda+0.0605/\lambda^2)\ \mathrm{mm}\)（\(\lambda\) 用 \(\mu\mathrm{m}\)）。
+  用 \(\lambda=0.55\) 代入 \(k=0\)：\(x\approx-4.73\,\mathrm{mm}\)，与 (2) 的测量值一致，可以确认 \(0.0605\) 才对。</li>
+<li><strong>例1.11</strong>：题干 \(r_1=-r_2=20\,\mathrm{cm}\) 应为 \(20\,\mathrm{mm}\)（11-22 已指出）。他这次按 mm 做，结果对。</li>
+<li>其余例1.3、例1.6、例1.10 的书上答案无误。</li>
+</ul>
+<hr>
+<h2>六、与真题对应</h2>
+<div class="table-wrap"><table><thead><tr><th>点</th><th>真题</th><th>备注</th></tr></thead><tbody><tr><td>杨氏插片：条纹移动方向 + 求 \(n\)（例2.7）</td><td><strong>2022 大1</strong>（直接问玻璃片移动方向及公式）、2017 大4、2018 大4</td><td>方向符号必须补牢</td></tr><tr><td>白光杨氏/零级颜色</td><td>2022 选7、2018 大2</td><td>零级在 \(O\) 之外、红内紫外</td></tr><tr><td>水中厚透镜逐次成像</td><td><strong>2026 大6s</strong>、2025 大4</td><td>已稳</td></tr><tr><td>浸水透镜焦距联立</td><td>2026 大6s、2025 大1</td><td>结果稳，过程要写</td></tr><tr><td>两透镜组合/像位置</td><td><strong>2026 大4d</strong></td><td>例1.11 已稳</td></tr><tr><td>平行板像移</td><td>2018 大3、2016 选9</td><td>已稳</td></tr></tbody></table></div>
+<hr>
+<h2>七、建议（距 12-20 考试还有 22 天）</h2>
+<ol>
+<li><strong>例2.7(3) 补一句话：</strong> 装在 \(S_2\) 前的玻璃片 → \(S_2\) 的光程变大 → 要补回光程差，条纹<strong>向 \(S_2\) 一侧移</strong>，零级在 \(O\) 下方。重写 \(x_0=-\tfrac Dd(n-1)t\)，并代入 \(\lambda=0.55\,\mu\mathrm{m}\) 检验是否等于 4.73 mm。</li>
+<li><strong>例1.10 把消元过程补上</strong>（两式相减）；以后遇到「实像」就检查焦距和物距是不是正数。</li>
+<li>本批已过关的题（例1.3、例1.6、例1.11）可以停刷。下一步按 11-27 的清单重做：<strong>例4.1(2)、填7、选1</strong>，然后是 <strong>例1.14、选5、例2.14</strong>。</li>
+<li>请把错题本 11-22 的第 18 题（应是例1.14）和 11-24 的错题（选5、例2.14、例2.8 等）单独发过来，我再看。</li>
+</ol>
+
+</article>
+<p class="foot">进度仍保存在刷题表所在浏览器里；这份分析只是记录。</p>
+
+</div>
+</body>
+</html>
